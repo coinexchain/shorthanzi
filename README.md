@@ -1,2 +1,2 @@
 # shorthanzi
-A library to compress strings contain mostly hanzi characters
+A library to compress strings contain mostly chinese characters (i.e. hanzi)
