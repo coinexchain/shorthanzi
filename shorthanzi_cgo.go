@@ -3,8 +3,14 @@
 package shorthanzi
 
 // #cgo CFLAGS: -O3
-// #include "lz4.h"
+// #include "./internal/lz4.c"
 import "C"
+
+import (
+	"fmt"
+	"errors"
+	"unsafe"
+)
 
 func CompressText(data string) ([]byte, bool) {
 	buf := make([]byte, len(data)*2)
